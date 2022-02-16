@@ -55,12 +55,7 @@ def draw() :
     outpaper = PhotoImage(height=outH, width=outW)
     canvas.create_image((inW / 2, inH / 2), image=inpaper, state='normal')
     canvas.create_image((inW + outW / 2 + 10, inH / 2), image=outpaper, state='normal')
-    ## 메모리 --> 화면으로 찍기
-    # for i in range(m_outH) :
-    #     for k in range(m_outW) :
-    #         r = g = b = m_outImage[i][k]
-    #         paper.put("#%02x%02x%02x" % (r, g, b), (k, i))
-    ## 더블 버퍼링 기법과 비스므레~~~~
+
     rgbString=""
 
     for i in range(inH):
